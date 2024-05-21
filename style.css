@@ -1,0 +1,124 @@
+*{
+    border: 0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.main{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(Asset/banner.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.main-header{
+    margin-top: 12px;
+    margin-left: 12px;
+    background-image: url(/Asset/header-bg.png);
+    width: 198vh;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    position: sticky;
+    z-index: 999;
+    
+}
+
+.logo{
+    font-size: 2rem;
+    color: #ffff;
+    position: relative;
+    left: 22px;
+    top:10px
+}
+span{
+    font-family: Impact, Charcoal, sans-serif;
+}
+ul{
+    display: flex;
+    gap: 2.95rem;
+    position: relative;
+    top:14px;
+    font-size: 1.4rem;
+    list-style: none;
+}
+ul a{
+    text-decoration: none;
+    color: #ffff;
+}
+ul a:hover{
+    text-decoration: underline;
+    text-underline-offset: 0.5em;
+}
+
+.sub-header{
+    margin-top: 12px;
+    position: relative;
+    left: 35%;
+    top:54px
+}
+.welcome{
+    font-size: 2rem;
+    color: #ffff;
+    position: relative;
+    top:44px
+}
+.intro-text{
+    font-size: 1.3rem;
+    position: relative;
+    top:64px;
+    right: 184px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    color: #ffff;
+}
+.start{
+    font-size: 1.7em;
+    position: relative;
+    top:94px;
+    left: 12%;
+}
+
+
+p a{
+    color: #ffff;
+    text-decoration: none;
+    text-decoration: none;
+    color: aliceblue;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 19px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    width: 150px;
+    position: relative;
+    right: 40px;
+}
+p a:hover{
+    border: solid #f44336;
+    background: #f44336;
+    transition: 1s;
+}
+#about{
+    position: relative;
+    text-align: center;
+    margin-top: 12px;
+   
+}
+.abouts{
+    font-family: "Arial Black", Gadget, sans-serif;
+    padding: 29px; 
+    position: relative; 
+    top:16px;
+    
+}
+
+#contact{
+text-align: center;
+}
+
+.dots{
+    position: absolute;
+    top:94px
+}
