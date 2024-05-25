@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translator</title>
+        <!-- Include Font Awesome library -->   
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+      <!--Including the stylesheet-->
+    <link rel="stylesheet" href="trans.css">
+</head>
+<body>
+    <!--Header-->
+    <nav class="main-header" id="header">
+        <h1 class="logo">Speak <span>Global</span></h1>
+    </nav>
+    <!--Buttons for the text and files translation-->
+    <div class="container">
+        <button class="trans trans-high" id="text-translate">  <i class="fa-solid fa-globe"></i>Translate text</button>
+        <button class="trans" id="file-translate"><i class="fa-regular fa-file"></i>Translate files</button>
+        <div id="text-trans" class="file active">
+           <hr>
+           <div class="texting-area">
+            <!--Text Area for typing text and translating text-->
+             <div class="text-input">
+                <textarea spellcheck="false" class="enter-text" placeholder="Enter text"></textarea>
+                <textarea spellcheck="false" readonly disabled class="translate-text" placeholder="Translation"></textarea>
+              </div>
+              <ul class="controls">
+          
+                <li class="row from">
+                  <div class="icons">
+                    <i id="from" class="fas fa-volume-up"></i>
+                    <i id="from" class="fas fa-copy"></i>
+                  </div>
+                  <select></select>
+                </li>
+                <li class="exchange"><i class="fas fa-exchange-alt"></i></li>
+                <li class="row to">
+                  <select></select>
+                  <div class="icons">
+                    <i id="to" class="fas fa-volume-up"></i>
+                    <i id="to" class="fas fa-copy"></i>
+                  </div>
+                </li>
+              </ul>
+           </div>
+           <!--The button to translate the text-->
+           <button class="transbtn">Translate Text</button>
+          </div>
+          <!--For the file translate-->
+          <div id="file-trans" class="file">
+            <hr>
+            <div class="texting-area">
+             <!--Text Area for typing text and translating text-->
+              <div class="text-input">
+                 <textarea spellcheck="false" class="enter-text" placeholder="Add document file"></textarea>
+                 <textarea spellcheck="false" readonly disabled class="translate-text" placeholder="Translation"></textarea>
+               </div>
+               
+            </div>
+            <!--The button to translate the text-->
+            <button class="transbtn">Translate Text</button>
+          </div>
+         
+    </div>
+   <script src="/templates/trans.js"></script>
+</body>
+</html>

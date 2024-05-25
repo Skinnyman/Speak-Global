@@ -9,7 +9,7 @@
 <body>
     <!--Home page-->
     <div class="main">
-        <nav class="main-header">
+        <nav class="main-header" id="header">
             <h1 class="logo">Speak <span>Global</span></h1>
             <ul>
                 <li><a href="#about">About</a></li>
@@ -17,12 +17,12 @@
             </ul>
         </nav>
         <div class="sub-header">
-            <h1 class="welcome">Welcome to SPEAK GLOBAL</h1>
+            <h1 class="welcome">SPEAK GLOBAL</h1>
             <h2 class="intro-text">Welcome to our website translator! Break language barriers
                 effortlessly with our powerful<br> translation tool. Whether it's for business, travel, or 
                 personal use, unlock seamless <br>communication across borders. Try it now and experience the
                 world in your language!</h2>             
-                <p class="start"><a href="/translate.html">Get Started</a></p>     
+                <p class="start"><a href="/templates/translate.html">Get Started</a></p>     
             </div>
     </div>
             <!--The About Section-->
@@ -47,9 +47,28 @@
     </div>
     <!--Contact section-->
      <div id="contact">
-        <h1>Contact</h1>
+        <div class="contact-form-container">
+            <h2>Contact Us</h2>
+            <form id="contact-form" action="contact.php" method="post">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="10" cols="50" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
         <img src="/Asset/footer-bg.png" alt="pic">
-     </div>   
      
+        
+     </div>   
+     <script src="contact info/contact.js"></script>
 </body>
 </html>

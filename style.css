@@ -20,9 +20,12 @@
     height: 10vh;
     display: flex;
     justify-content: space-around;
-    position: sticky;
-    z-index: 999;
-    
+    background-attachment: fixed;
+}
+header{
+    position: static;
+    background-color: #fff;
+    border-radius: 34px;
 }
 
 .logo{
@@ -56,13 +59,14 @@ ul a:hover{
     margin-top: 12px;
     position: relative;
     left: 35%;
-    top:54px
+    top:74px
 }
 .welcome{
     font-size: 2rem;
     color: #ffff;
     position: relative;
-    top:44px
+    top:44px;
+    left: 32px;
 }
 .intro-text{
     font-size: 1.3rem;
@@ -104,13 +108,14 @@ p a:hover{
     position: relative;
     text-align: center;
     margin-top: 12px;
+    top:39px;
    
 }
 .abouts{
     font-family: "Arial Black", Gadget, sans-serif;
     padding: 29px; 
     position: relative; 
-    top:16px;
+    top:26px;
     
 }
 
@@ -121,4 +126,68 @@ text-align: center;
 .dots{
     position: absolute;
     top:94px
+}
+.contact-form-container {
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    position: relative;
+    left: 390px;
+}
+
+.contact-form-container h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    padding: 19px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    position: relative;
+    right: 16px;
+    top:7px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #007bff;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+#message{
+    height: 250px;
+    width: 100%;
+    outline: none;
+    resize: none;
+    background: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 5px;
 }

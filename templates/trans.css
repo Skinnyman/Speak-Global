@@ -1,0 +1,184 @@
+*{
+    border: 0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.main-header{
+    margin-top: 12px;
+    margin-left: 12px;
+    background-image: url(/Asset/header-bg.png);
+    width: 198vh;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    background-attachment: fixed;
+}
+
+header{
+    position: static;
+    background-color: #fff;
+    border-radius: 34px;
+}
+
+.logo{
+    font-size: 2rem;
+    color: #0b0909;
+    position: relative;
+    top:10px
+}
+span{
+    font-family: Impact, Charcoal, sans-serif;
+}
+.container{
+    margin-top: 42px;
+}
+.trans{
+    padding: 26px;
+    margin-left: 43px;
+    font-size: 24px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.trans:hover{
+    background-color: rgb(201, 240, 240);
+}
+hr {
+    border: none;
+    height: 2px;
+    background-color: #333;
+    margin: 20px 0;
+    width: 90%;
+    position: relative;
+    left: 54px;
+}
+.texting-area{
+    border: 2px solid black;
+    width: 90%;
+    position: relative;
+    left: 55px;
+}
+.text-input{
+    display: flex;
+}
+.text-input textarea{
+    height: 250px;
+    width: 100%;
+    border: none;
+    outline: none;
+    resize: none;
+    background: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 5px;
+  }
+  .text-input textarea::placeholder{
+    color: #e58686;
+  }
+  .text-input .translate-text{
+    border-left: 2px solid black;
+    border-radius: 0;
+  }
+  .texting-area .text-input{
+    border-bottom: 2px solid #07070b;
+  }
+  .transbtn{
+    position: relative;
+    left: 34px;
+    width: 90%;
+    padding: 14px;
+    outline: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 29px;
+    margin-bottom: 15px;
+    font-size: 17px;
+    border-radius: 8px;
+    background-image: linear-gradient(to top, #efbcc9 0%, #ffb199 100%);
+    background-color: #ff9177;
+    font-size: 1.4rem;
+    color: #07070b;
+    cursor: pointer;
+  }
+  .file{
+    display: none;
+  }
+  .active {
+    display: block;
+  }
+  
+  .trans-high{
+    background-color: rgb(201, 240, 240);
+  }
+
+  .controls, li, .icons, .icons i{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .controls{
+    list-style: none;
+    padding: 12px 15px;
+  }
+  .controls .row .icons{
+    width: 38%;
+  }
+  .controls .row .icons i{
+    width: 50px;
+    color: #adadad;
+    font-size: 14px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    justify-content: center;
+  }
+
+  .controls .row.from .icons{
+    padding-right: 15px;
+    border-right: 1px solid #ccc;
+  }
+  .controls .row.to .icons{
+    padding-left: 15px;
+    border-left: 1px solid #ccc;
+  }
+  .controls .row select{
+    color: #333;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    background: none;
+    padding-left: 5px;
+  }
+
+  .text-input textarea::-webkit-scrollbar{
+    width: 4px;
+  }
+  .controls .row select::-webkit-scrollbar{
+    width: 8px;
+  }
+  .text-input textarea::-webkit-scrollbar-track,
+  .controls .row select::-webkit-scrollbar-track{
+    background: #fff;
+  }
+  .text-input textarea::-webkit-scrollbar-thumb{
+    background: #ddd;
+    border-radius: 8px;
+  }
+  .controls .row select::-webkit-scrollbar-thumb{
+    background: #999;
+    border-radius: 8px;
+    border-right: 2px solid #ffffff;
+  }
+  .controls .exchange{
+    color: #0f0101;
+    cursor: pointer;
+    font-size: 16px;
+    transition: transform 0.2s ease;
+  }
+  .controls i:active{
+    transform: scale(0.9);
+  }
+ /* Responsive */
+  @media (max-width: 660px){
+    
+  }
