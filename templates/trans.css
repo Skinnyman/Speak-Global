@@ -126,7 +126,7 @@ hr {
   }
   .controls .row .icons i{
     width: 50px;
-    color: #adadad;
+    color: #0c0505;
     font-size: 14px;
     cursor: pointer;
     transition: transform 0.2s ease;
@@ -177,6 +177,35 @@ hr {
   }
   .controls i:active{
     transform: scale(0.9);
+  }
+
+  .file-area{
+    border: 1px solid rgb(1, 0, 0);
+    width: 70%;
+    position: relative;
+    left: 95px;
+    height: 50vh;
+    text-align: center;
+  }
+  .file-support{
+    margin-top: 34px;
+  }
+  .choose_file{
+    position: relative;
+    top:69px
+  }
+  .submit-file{
+    padding: 14px;
+    cursor: pointer;
+  }
+  .Translate-file{
+    width: 90px;
+    height: 40px;
+    border-radius: 14px;
+    cursor: pointer;
+    position: relative;
+    top:19px;
+    right: 12px;
   }
  /* Responsive */
   @media (max-width: 660px){
