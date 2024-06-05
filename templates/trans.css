@@ -73,7 +73,7 @@ hr {
     border-radius: 5px;
   }
   .text-input textarea::placeholder{
-    color: #e58686;
+    color: #130202;
   }
   .text-input .translate-text{
     border-left: 2px solid black;
@@ -84,7 +84,7 @@ hr {
   }
   .transbtn{
     position: relative;
-    left: 34px;
+    left: 59px;
     width: 90%;
     padding: 14px;
     outline: none;
@@ -180,7 +180,7 @@ hr {
   }
 
   .file-area{
-    border: 1px solid rgb(1, 0, 0);
+    border: none;
     width: 70%;
     position: relative;
     left: 95px;
@@ -204,10 +204,308 @@ hr {
     border-radius: 14px;
     cursor: pointer;
     position: relative;
-    top:19px;
+    top:2px;
     right: 12px;
   }
+ 
+  .File-area{
+    border: 2px solid rgb(2, 2, 2);
+    width: 85%;
+    position: relative;
+    left: 55px;
+    margin-bottom: 90px;
+    height: 46vh;
+}
+.file-list{
+  position: relative;
+  bottom: 50px;
+}
+#downloadLink {
+  display: block;
+  margin-top: 20px;
+  padding: 5px;
+  background-color: #c3d7c3;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  border-radius: 4px;
+  position: relative;
+  bottom: 10px;
+  width: 30%;
+  left: 209px;
+  cursor: pointer; 
+}
+.container_box{
+  border: 1px solid black;
+  position: relative;
+  
+}
  /* Responsive */
-  @media (max-width: 660px){
-    
+ @media screen and (max-width:990px) {
+  #downloadLink{
+    position: relative;
+    left:-74px;
+    bottom: 60px;
+    width: 50%;
+    height: 30px;
+  }
+ }
+  @media screen and (max-width: 760px){
+    .main-header{
+      margin-top: 12px;
+      margin-left: 12px;
+      background-image: url(/Asset/header-bg.png);
+      width: 123vh;
+      height: 10vh;
+      display: flex;
+      justify-content: space-around;
+      background-attachment: fixed;
+  }
+      .trans{
+            padding: 10px;
+            margin-left: 43px;
+            font-size: 24px;
+            border-radius: 12px;
+            cursor: pointer;
+        }
+        .text-input textarea{
+          height: 250px;
+          width: 70%;
+          border: none;
+          outline: none;
+          resize: none;
+          background: none;
+          font-size: 18px;
+          padding: 10px 15px;
+          border-radius: 5px;
+        }
+        .texting-area{
+          border: 2px solid black;
+          width: 86%;
+          position: relative;
+          left: 55px;
+      }
+      .controls .row .icons i{
+        width: 32px;
+        color: #0c0505;
+        font-size: 14px;
+        cursor: pointer;
+        transition: transform 0.2s ease;
+        justify-content: center;
+      }
+      #Text-select{
+        position: relative;
+        right: 26px;
+      }
+      #translate-select{
+        position: relative;
+        left: 20px;
+      }
+      #downloadLink{
+        position: relative;
+        left:-74px;
+        bottom: 60px;
+        width: 50%;
+        height: 30px;
+      }
+  }
+  @media screen and (max-width: 620px){
+    .main-header{
+      margin-top: 12px;
+      margin-left: 12px;
+      background-image: url(/Asset/header-bg.png);
+      width: 113vh;
+      height: 10vh;
+      display: flex;
+      justify-content: space-around;
+      background-attachment: fixed;
+  }
+      .trans{
+            padding: 10px;
+            margin-left: 43px;
+            font-size: 24px;
+            border-radius: 12px;
+            cursor: pointer;
+        }
+        .text-input textarea{
+          height: 250px;
+          width: 70%;
+          border: none;
+          outline: none;
+          resize: none;
+          background: none;
+          font-size: 18px;
+          padding: 10px 15px;
+          border-radius: 5px;
+        }
+        .texting-area{
+          border: 2px solid black;
+          width: 86%;
+          position: relative;
+          left: 55px;
+      }
+      .controls .row .icons i{
+        width: 32px;
+        color: #0c0505;
+        font-size: 14px;
+        cursor: pointer;
+        transition: transform 0.2s ease;
+        justify-content: center;
+      }
+      #Text-select{
+        position: relative;
+        right: 26px;
+      }
+      #translate-select{
+        position: relative;
+        left: 20px;
+      }
+      #downloadLink{
+        position: relative;
+        left:-74px;
+        bottom: 60px;
+        width: 50%;
+        height: 30px;
+      }
+  }
+
+  @media screen and (max-width:560px) {
+    .text-input textarea{
+      height: 250px;
+      width: 290%;
+      border: none;
+      outline: none;
+      resize: none;
+      background: none;
+      font-size: 18px;
+      padding: 10px 15px;
+      border-radius: 5px;
+    }
+    .controls .row .icons i{
+        width: 32px;
+        color: #030000;
+        font-size: 14px;
+        cursor: pointer;
+        transition: transform 0.2s ease;
+        justify-content: center;
+      }
+      #translate-select{
+        position: relative;
+        right: 95px;
+        width: 44%;
+      }
+      #Text-select{
+        position: relative;
+        right: 20px;
+        width: 50%;
+      }
+      #downloadLink{
+        position: relative;
+        left:-74px;
+        bottom: 60px;
+        width: 50%;
+        height: 30px;
+      }
+  }
+  @media screen and (max-width:450px) {
+    #file-translate{
+      position: relative;
+      top: 10px;
+    }
+    #text-translate{
+      position: relative;
+      bottom: 25px;
+    }
+    .main-header{
+      margin-top: 12px;
+      margin-left: 12px;
+      background-image: url(/Asset/header-bg.png);
+      width: 74vh;
+      height: 10vh;
+      display: flex;
+      justify-content: space-around;
+      background-attachment: fixed;
+  }
+  .controls .row .icons i{
+    width: 32px;
+    color: #000000;
+    font-size: 14px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    justify-content: center;
+  }
+  .transbtn{
+    width: 70%;
+    position: relative;
+    right: 199px;
+  }
+  hr {
+    border: none;
+    height: 2px;
+    background-color: #333;
+    margin: 20px 0;
+    width: 87%;
+    position: relative;
+    left: 54px;
+}
+#downloadLink{
+  position: relative;
+  left:-74px;
+  bottom: 60px;
+  width: 50%;
+  height: 30px;
+}    
+  }
+  @media screen and (max-width:360px) {
+    #File-select{
+      width: 90px;
+    }
+    #Filetranslate-select{
+      width: 90px;
+    }
+    .Translate-file{
+      position: relative;
+      left: 6px;
+      top: -27px;
+    }
+    .File-area{
+      border: 2px solid rgb(2, 2, 2);
+      width: 85%;
+      position: relative;
+      left: 37px;
+      margin-bottom: 90px;
+      height: 46vh;
+  }
+  hr{
+    width: 80%;
+  }
+  .choose_file{
+    position: relative;
+    top:59px
+  }
+  .choose{
+    position: relative;
+    bottom: 34px;
+  }
+  #file{
+    position: relative;
+    bottom: 23px;
+  }
+  .text-input textarea{
+    height: 250px;
+    width: 290%;
+    border: none;
+    outline: none;
+    resize: none;
+    background: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 5px;
+  }
+  #downloadLink{
+    position: relative;
+    left:-74px;
+    bottom: 90px;
+    width: 50%;
+    height: 30px;
+  }
   }
